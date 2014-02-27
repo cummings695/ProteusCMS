@@ -9,6 +9,9 @@ gem "therubyracer", platforms: :ruby
 gem "jquery-rails"
 gem "turbolinks"
 gem "jbuilder", "~> 1.2"
+
+gem "rails_admin"
+
 group :development do
   gem "guard-rspec"
   gem "pry"
@@ -39,3 +42,7 @@ gem "omniauth"
 gem "omniauth-facebook"
 gem "omniauth-twitter"
 gem "hashugar", github: "alex-klepa/hashugar"
+
+# deployment gems
+gem 'unicorn'
+gem 'capistrano'

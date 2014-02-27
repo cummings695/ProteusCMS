@@ -1,6 +1,10 @@
 ProteusCMS::Application.routes.draw do
   
   
+  resources :categories
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
   authenticated :user do
     root to: 'home#index', as: :authenticated_root
   end
