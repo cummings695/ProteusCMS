@@ -74,9 +74,11 @@ test:
 production:
   sessions:
     default:
-      database: proteus_cms_prod
+      database: proteus_cms
       hosts:
-        - host3.vertasource.com:27017
+        - ds033629.mongolab.com:33629
+      username: proteus_user
+      password: proteus_pass
       options:
         read: primary
         # In the test environment we lower the retries and retry interval to
