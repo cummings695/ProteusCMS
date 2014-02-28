@@ -13,7 +13,7 @@ RailsAdmin.config do |config|
 
   ## == PaperTrail ==
   # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
-
+  config.excluded_models << "Identity"
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
   config.actions do
@@ -30,5 +30,19 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
+  end
+
+  config.navigation_static_links = {
+      'Google' => 'http://www.google.com'
+  }
+
+  config.model "Category" do
+    list do
+      field :code
+      field :name
+      field :description
+    end
+
+
   end
 end

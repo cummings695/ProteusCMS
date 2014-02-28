@@ -13,3 +13,10 @@ Devise
 CanCan
 RailsAdmin
 and much more..
+
+## Features
+* Authentication (via [Devise](https://github.com/plataformatec/devise) or other)
+* Authorization (via [Cancan](https://github.com/ryanb/cancan))
+* User action history (via [PaperTrail](https://github.com/airblade/paper_trail))
+* Supported ORMs
+  * Mongoid
