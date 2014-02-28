@@ -42,7 +42,3 @@ gem "omniauth"
 gem "omniauth-facebook"
 gem "omniauth-twitter"
 gem "hashugar", github: "alex-klepa/hashugar"
-
-# deployment gems
-gem 'unicorn'
-gem 'capistrano'
